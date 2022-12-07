@@ -152,3 +152,16 @@ embed {
     color: white;
     font-style: italic;
 }
+
+.column {
+    flex: 40%;
+    padding: 5px;
+}
+.row {
+    display: flex;
+}
+.tableau-center1 {
+    width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+}
