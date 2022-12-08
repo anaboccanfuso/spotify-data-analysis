@@ -43,11 +43,11 @@
                         <span class="item">My Personal Music Taste</span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#conclusion">
                         <span class="item">Conclusion</span>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#sources">
                         <span class="item">Sources</span>
@@ -134,8 +134,6 @@
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
-    <br>
-    <h3><i>Analysis</i></h3>
     <br><br>
     <p>
         The first line graph depicting annual change in average pop elements (danceability, valence, energy) 
@@ -212,8 +210,49 @@
     <br><br><br>
     <section id="case-study">
         <h2>Part II: Pop Case Study - Taylor Swift</h2>
+        <br>
+        <p>
+            We now perform a case study on the artist that has the most monthly listeners on Spotify, 
+            Taylor Swift. Recently, Taylor Swift has broken countless record with her new album Midnights. 
+            She became the first artist in history to occupy the entire top 10 of the Billboard Hot 100, 
+            Midnights became Spotify’s most-streamed album in a single day, she broke the record for the 
+            most-streamed artist in a single day in Spotify history, and many others. 
+        </p>
+        <br>
+        <p>
+            Below, I have visualized the valence and danceability of Swift's discography. These plots take the 
+            individual valence/danceability values of each song within an album, producing a holistic view of an 
+            album's valence/danceability distribution shape and range. The curve of a density plot allows inference 
+            of how Swift's albums are balanced relative to each other, as well as her evolution over time.
+        </p>
+        <br>
         <embed type="text/html" src="ts_valence.html" height="400" width="100%">
+        <br>
+        <p>
+            To start analyzing the Taylor Swift graphs, I deselected her country albums using the legend on the 
+            right. These albums include Fearless, Red, Speak Now, and Taylor Swift. This leaves her pop albums. Of 
+            these, her most positive album containing songs of the highest valence is 1989. This album is the least 
+            evenly distributed in terms of valence, with most of the songs having a valence of 0.5. For her subsequent 
+            pop albums, the peak of the density curve moves to the left, meaning more songs have less valence. 
+            Reputation, her second pop album, is more evenly distributed with most songs having a valence of 0.3. 
+            Lover was even more evenly distributed, with most songs having a valence of 0.5. Folklore has the most 
+            songs with the same valence. Evermore, a more subdued album, had a similar distribution as Reputation, with 
+            most songs having a valence of 0.3. Her newest album, Midnights, has the most skewed distribution, with most 
+            songs having a valence of 0.13. Her two pop albums that won album of the year are 1989 and Folklore, which 
+            have a similar density curve for valence. 
+        </p>
+        <br>
         <embed type="text/html" src="ts_dance.html" height="400" width="100%">
+        <br>
+        <p>
+            Moving to the danceability visual, 1989 had a fairly even distribution, with most songs having a danceability 
+            of 0.6. Reputation had a similar curve to 1989, with a more dramatic spike at its peak. Lover has a very even 
+            distribution in comparison, and the curve looks almost flat. However, most songs have a danceability of 0.75. 
+            Folklore’s curve is the most even so far, with the peak at 0.6. Evermore had the second-most dramatic curve, 
+            with a large peak at 0.55 for danceability. Finally, Midnights had the highest peaked curve. Most songs from 
+            Midnights had a danceability of 0.65. 
+        </p>
+        <br>
         <!-- <embed type="text/html" src="ts_tempo.html" width="50%" height="400"> -->
         <!-- <embed type="text/html" src="ts_acoustic.html" width="50%" height="400"> -->
         <!-- <embed type="text/html" src="ts_energy.html" width="50%" height="400">   -->
@@ -224,6 +263,17 @@
     <br><br><br>
     <section id="personal">
         <h2>Part III: Analyzing My Personal Music Taste from Spotify Data</h2>
+        <br>
+        <p>
+            In the last part of my analysis, I wanted to compare how much I listen to 
+            music throughout the year, as well as how my favorite artists change based on 
+            time I spend listening to them and how many distinct tracks I listen to. I also 
+            wanted to visualize who my top artist is throughout the year, as it may change.
+            This data was collected by requesting my personal streaming history from Spotify. 
+            Below, I have visualized these different aspects in several types of charts. You 
+            can toggle what's selected by choosing an artist. 
+        </p>
+        <br>
         <div class='tableauPlaceholder' id='viz1670363591119' style='position: relative'><noscript>
                 <a href='#'>
                     <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PersonalAnalysis_16703633032360&#47;Dashboard1&#47;1_rss.png' style='border: none;' /></a></noscript>
@@ -259,11 +309,49 @@
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
             vizElement.parentNode.insertBefore(scriptElement, vizElement);                
         </script>
+        <p>
+            Focusing on the first scatter plot, it is evident that the two artists that 
+            I listen to the most are The 1975 and Taylor Swift. I have played both of 
+            these artists the most over the past year, with total minutes played averaging 
+            7,400 minutes. However, I have listened to more distinct tracks by Taylor Swift 
+            than The 1975, explained by Taylor’s 10 albums compared to The 1975’s five albums. 
+            This graph also shows how much more I listen to these two artists than others 
+            combined. My next most listened to artist is The Lumineers, with 1,400 minutes 
+            played and 60 distinct tracks. Therefore, I disproportionately listen to my two 
+            favorite artists in comparison, in both listening time and distinct tracks listened 
+            to. This finding is further supported by the heat map on the right. Although the 
+            size of the boxes show how much I favor my two favorite artists, the shading also 
+            provides great insight. The 1975 and Taylor Swift are a deep green, and the next 
+            shaded artists (The Lumineers and Harry Styles) have a very light shade of green 
+            in comparison. The other artists in the heat map have a color that barely resembles 
+            green. 
+        </p>
         <br>
+        <p>
+            For the next graph in my dashboard, I plotted my most listened to artist throughout 
+            the year, using a running sum of the minutes played. Taylor Swift is consistent 
+            throughout the year until the very end, where The 1975 barely surpassed her. This 
+            shows a shift in my listening pattern at the end of the year when I started to strictly 
+            listen to the band. The growth of Taylor’s curve slowed as The 1975’s curve shot up.  
+            Looking at the end of the graph, we again see the disparity between total minutes played 
+            of my top two artists and my next three top artists. Each of these artist’s curves did 
+            not grow much in comparison. For example, looking at Harry Styles’ curve, I listened to 
+            him for about one month before the curve flattened (indicating I stopped listening to 
+            his music). Khalid’s flat curve was more consistent but much lower. 
+        </p>
+        <br>
+        <p>
+            For the last visualization in my dashboard, I created a line graph depicting how much 
+            music I listen to each day over the past year. I found it interesting how contrasting 
+            this line was, with some days reaching hundreds of minutes of listening, and others 
+            amounting to a mere four minutes. However, it is evident that I listened to more music 
+            later in the year, starting in June of 2022. 
+        </p>
     </section>
+    <!-- <br><br>
     <section id="conclusion">
         <h2>Conclusion</h2>
-    </section>
+    </section> -->
     <br><br><br>
     <section id="sources">
         <h3>Methodology & Sources</h3>
